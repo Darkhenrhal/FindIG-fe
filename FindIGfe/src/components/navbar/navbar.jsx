@@ -43,8 +43,8 @@ const Navbar = () => {
           <ul className='lg:flex gap-x-6 max-lg:space-y-3'>
             <li className='mb-6 hidden max-lg:block'>
               <a href="javascript:void(0)">
-                <img src="https://readymadeui.com/readymadeui-light.svg" alt="logo" className='w-36' />
-              </a>
+                 <h1 className="font-bold text-3xl">FindSocial</h1>
+               </a>
             </li>
             <li className='max-lg:border-b max-lg:py-3 px-3'>
               <a href='javascript:void(0)' className='hover:text-blue-600 text-blue-600 block transition-all'>Home</a>
