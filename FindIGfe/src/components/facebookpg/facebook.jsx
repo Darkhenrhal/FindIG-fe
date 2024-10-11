@@ -48,7 +48,7 @@ function Facebook() {
         {results.length > 0 && (
         <div className="mt-10">
             <h2 className="text-2xl font-semibold mb-4 text-black5 text-center">
-            Instagram Profiles
+            Facebook Profiles
             </h2>
             <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
@@ -65,7 +65,7 @@ function Facebook() {
                     <td className="py-2 px-4 text-black1">{result.name}</td>
                     <td className="py-2 px-4">
                         <a
-                        href={result.instagramLink}
+                        href={result.link}
                         className=" text-black1  transition-all"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -75,12 +75,12 @@ function Facebook() {
                     </td>
                     <td className="py-2 px-4">
                         <a
-                        href={result.instagramLink}
+                        href={result.link}
                         className="text-blue-500 hover:underline"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
-                        {result.instagramLink}
+                        {result.link}
                         </a>
                     </td>
                     </tr>
@@ -90,10 +90,7 @@ function Facebook() {
             </div>
         </div>
         )}
-    </div>
-  
+    </div> 
   );
-
 }
-
 export default Facebook;
