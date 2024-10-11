@@ -7,6 +7,7 @@ import Instagram from './components/instagram/instagram';
 import Tiktok from './components/tiktok/tiktok';
 import Youtube from './components/youtube/youtube';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Influencer from './components/influencer/influencer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <div className='pt-16 bg-black3'> {/* Added padding to avoid content overlapping the Navbar */}
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/influencer" element={<Influencer/>}/>
             <Route path="/instagram" element={<Instagram />} />
             <Route path="/tiktok" element={<Tiktok/>} />
             <Route path="/youtube" element={<Youtube/>} />
