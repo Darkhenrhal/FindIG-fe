@@ -52,7 +52,7 @@ function Instagram() {
       <div className="text-center">
         <button
           onClick={handleSearch}
-          className="px-6 py-2 bg-black1 text-white rounded-md font-medium hover:bg-black1 transition-all"
+          className="px-6 py-2 bg-black1 text-white rounded-md font-medium hover:bg-black4 hover:text-black1 transition-all"
           disabled={loading} // Disable the button while loading
         >
           {loading ? 'Searching...' : 'Search'}

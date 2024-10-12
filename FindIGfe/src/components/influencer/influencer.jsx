@@ -96,7 +96,7 @@ function Influencer() {
       <div className="text-center">
         <button
           onClick={handleSearch}
-          className="px-6 py-2 bg-black1 text-white rounded-md font-medium hover:bg-black1 transition-all"
+          className="px-6 py-2 bg-black1 text-white rounded-md font-medium hover:bg-black4 hover:text-black1 transition-all"
           disabled={loading}
         >
           {loading ? 'Searching...' : 'Search'}
@@ -118,8 +118,8 @@ function Influencer() {
                 <tr className="text-lg bg-black2 text-white">
                   <th className="py-3 px-4">Name</th>
                   <th className="py-3 px-4">Facebook</th>
-                  <th className="py-3 px-4">Tiktok</th>
                   <th className="py-3 px-4">Youtube</th>
+                  <th className="py-3 px-4">Tiktok</th>
                   <th className="py-3 px-4">Instagram</th>
                 </tr>
               </thead>
@@ -139,22 +139,22 @@ function Influencer() {
                     </td>
                     <td className="py-2 px-4">
                       <a
-                        href={resultstt[index]?.link || '#'}
-                        className="text-blue-500 hover:underline"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {resultstt[index]?.followers || 'N/A'}
-                      </a>
-                    </td>
-                    <td className="py-2 px-4">
-                      <a
                         href={resultsyt[index]?.link || '#'}
                         className="text-blue-500 hover:underline"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         {resultsyt[index]?.followers || 'N/A'}
+                      </a>
+                    </td>
+                    <td className="py-2 px-4">
+                      <a
+                        href={resultstt[index]?.link || '#'}
+                        className="text-blue-500 hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {resultstt[index]?.followers || 'N/A'}
                       </a>
                     </td>
                     <td className="py-2 px-4">

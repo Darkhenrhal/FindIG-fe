@@ -8,6 +8,8 @@ import Tiktok from './components/tiktok/tiktok';
 import Youtube from './components/youtube/youtube';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Influencer from './components/influencer/influencer';
+import LinkEmbed from './components/linkembed/linkembed';
+import Web from './components/web/web';
 
 function App() {
   return (
@@ -24,6 +26,9 @@ function App() {
             <Route path="/tiktok" element={<Tiktok/>} />
             <Route path="/youtube" element={<Youtube/>} />
             <Route path="/facebook" element={<Facebook/>} />
+            <Route path="/linkembed" element={<LinkEmbed/>} />
+            <Route path="/web" element={<Web/>} />
+
           </Routes>
         </div>
         <Footer />

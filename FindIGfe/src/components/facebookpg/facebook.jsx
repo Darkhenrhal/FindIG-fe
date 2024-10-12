@@ -43,7 +43,7 @@ function Facebook() {
         <div className="mb-6">
           <textarea
             className="w-full p-3 text-black5 bg-black1 border border-black4 rounded-md focus:outline-none focus:ring-2 focus:ring-black5 resize-none h-40"
-            placeholder="Enter Instagram account names (one per line)"
+            placeholder="Enter Facebook account/pages names (one per line)"
             value={searchNames}
             onChange={(e) => setSearchNames(e.target.value)}
           />
@@ -52,7 +52,7 @@ function Facebook() {
         <div className="text-center">
           <button
             onClick={handleSearch}
-            className="px-6 py-2 bg-black1 text-white rounded-md font-medium hover:bg-black1 transition-all"
+            className="px-6 py-2 bg-black1 text-white rounded-md font-medium hover:bg-black4 hover:text-black1 transition-all"
             disabled={loading} // Disable the button while loading
           >
             {loading ? 'Searching...' : 'Search'}
