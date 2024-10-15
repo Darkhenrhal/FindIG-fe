@@ -34,16 +34,17 @@ function Web() {
     }
   };
 
+
   return (
     <div className="App container mx-auto p-4 text-black5 min-h-screen">
       <h1 className="text-4xl font-bold text-center mb-8 text-black5">
-        Website Data Collector
+        Web Data Collector
       </h1>
 
       <div className="mb-6">
         <textarea
           className="w-full p-3 text-black5 bg-black1 border border-black4 rounded-md focus:outline-none focus:ring-2 focus:ring-black5 resize-none h-40"
-          placeholder="Enter Website names (one per line)"
+          placeholder="Enter Tiktok account names (one per line)"
           value={searchNames}
           onChange={(e) => setSearchNames(e.target.value)}
         />
@@ -68,15 +69,15 @@ function Web() {
       {results.length > 0 && (
         <div className="mt-10">
           <h2 className="text-2xl font-semibold mb-4 text-black5 text-center">
-            Website Links
+            Tiktok Profiles
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="text-lg bg-black2 text-white">
                   <th className="py-3 px-4">Name</th>
-                  <th className="py-3 px-4">Visit Link</th>
-                  <th className="py-3 px-4">Website Link</th>
+                  <th className="py-3 px-4">Embeded Link</th>
+                  <th className="py-3 px-4">Web-Site Link</th>
                 </tr>
               </thead>
               <tbody className='bg-white'>
@@ -90,7 +91,7 @@ function Web() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {result.link === 'N/A' ? 'N/A' : 'Visit'}
+                        Visit
                       </a>
                     </td>
                     <td className="py-2 px-4">
