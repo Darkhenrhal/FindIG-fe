@@ -20,7 +20,7 @@ function Influencer() {
 
     try {
       // Facebook
-      const responsefb = await fetch('http://localhost:5000/searchfb', {
+      const responsefb = await fetch('http://localhost:4158/searchfb', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ function Influencer() {
       setResultsfb(datafb);
 
       // TikTok
-      const responsett = await fetch('http://localhost:5000/searchtt', {
+      const responsett = await fetch('http://localhost:4158/searchtt', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ function Influencer() {
       setResultstt(datatt);
 
       // YouTube
-      const responseyt = await fetch('http://localhost:5000/searchyt', {
+      const responseyt = await fetch('http://localhost:4158/searchyt', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -59,7 +59,7 @@ function Influencer() {
       setResultsyt(datayt);
 
       // Instagram
-      const responseig = await fetch('http://localhost:5000/searchig', {
+      const responseig = await fetch('http://localhost:4158/searchig', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

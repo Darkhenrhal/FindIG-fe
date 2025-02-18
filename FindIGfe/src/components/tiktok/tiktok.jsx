@@ -10,7 +10,7 @@ function Tiktok() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch('http://servercol.winmediajms.com/searchtt', {
+      const response = await fetch('http://localhost:4158/searchtt', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

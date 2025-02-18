@@ -10,7 +10,7 @@ function Instagram() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch('http://servercol.winmediajms.com/searchig', {
+      const response = await fetch('http://localhost:4158/searchig', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

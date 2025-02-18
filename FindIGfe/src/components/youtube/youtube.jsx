@@ -10,7 +10,7 @@ function Youtube() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch('http://servercol.winmediajms.com/searchyt', {
+      const response = await fetch('http://localhost:4158/searchyt', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
